@@ -33,5 +33,3 @@ coverage/
 # npm lock file (if not necessary to be in version control)
 package-lock.json
 
-# AWS-specific files for build and deployments
-buildspec.yml
