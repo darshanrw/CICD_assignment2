@@ -11,7 +11,7 @@ cdk.out
 node_modules/
 
 # Build directories
-bin/
+
 build/
 
 # AWS CDK files
