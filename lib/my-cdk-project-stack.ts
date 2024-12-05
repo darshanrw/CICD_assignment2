@@ -38,7 +38,7 @@ export class MyCdkProjectStack extends cdk.Stack {
 
     const myTable = new dynamodb.Table(this, 'DarshanTable', {
       partitionKey: { name: 'id', type: dynamodb.AttributeType.STRING },
-      tableName: 'MyTable',
+      tableName: 'DarshanTable',
       removalPolicy: cdk.RemovalPolicy.DESTROY, // Automatically delete for dev/test environments
     });
     
