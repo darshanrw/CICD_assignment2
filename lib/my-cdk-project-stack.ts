@@ -16,7 +16,7 @@ export class MyCdkProjectStack extends cdk.Stack {
     // const queue = new sqs.Queue(this, 'MyCdkProjectQueue', {
     //   visibilityTimeout: cdk.Duration.seconds(300)
     // });
-    const myBucket = new s3.Bucket(this, 'MyBucket', {
+    const myBucket = new s3.Bucket(this, 'Darshan', {
       versioned: true,
       removalPolicy: cdk.RemovalPolicy.DESTROY, // Automatically delete bucket for dev/test environments
     });
