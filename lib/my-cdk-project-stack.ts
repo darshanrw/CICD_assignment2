@@ -21,7 +21,7 @@ export class MyCdkProjectStack extends cdk.Stack {
       removalPolicy: cdk.RemovalPolicy.DESTROY, // Automatically delete bucket for dev/test environments
     });
     
-    const myLambda = new lambda.Function(this, 'MyLambda', {
+    const myLambda = new lambda.Function(this, 'DarshanLambda', {
       runtime: lambda.Runtime.NODEJS_18_X, // Updated runtime
       handler: 'index.handler',
       code: lambda.Code.fromInline(`
@@ -36,7 +36,7 @@ export class MyCdkProjectStack extends cdk.Stack {
     });
     
 
-    const myTable = new dynamodb.Table(this, 'MyTable', {
+    const myTable = new dynamodb.Table(this, 'DarshanTable', {
       partitionKey: { name: 'id', type: dynamodb.AttributeType.STRING },
       tableName: 'MyTable',
       removalPolicy: cdk.RemovalPolicy.DESTROY, // Automatically delete for dev/test environments
